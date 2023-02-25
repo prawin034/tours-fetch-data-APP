@@ -1,0 +1,12 @@
+@mixin respond($BREAKPOINT) {
+  @if $BREAKPOINT == PHONE {
+    @media only screen and (max-width: 33.5em) {
+      @content;
+    }
+  }
+  @if $BREAKPOINT == MINI {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.loading {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1098ad;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
+.App {
+  width: 50rem;
+  margin: 5rem auto;
+  @include respond(PHONE) {
+    width: 40rem;
+  }
+  @include respond(MINI) {
+    width: 30rem;
+  }
+}
+
+.tours {
+  &_title {
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .underline {
+    border-bottom: 2px solid #1098ad;
+    border-width: thick;
+    width: 20rem;
+    margin: 0 auto;
+  }
+}
+
+.tour {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  &_img {
+    width: 50rem;
+    height: 20rem;
+    @include respond(PHONE) {
+      width: 40rem;
+    }
+    @include respond(MINI) {
+      width: 30rem;
+    }
+  }
+  &_info {
+    box-shadow: 0 6rem 11rem rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+  }
+  &_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  &_title {
+    font-size: 1.4rem;
+    color: #1098ad;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  &_price {
+    color: #fff;
+    background-color: #1098ad;
+    display: inline-block;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+  }
+
+  &_detail {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    transition: all 1s ease-in;
+  }
+
+  &_btn {
+    border: 1px solid rgb(222, 138, 152);
+    outline: 1px solid rgb(222, 138, 152);
+    border: none;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 2rem;
+    color: rgb(222, 138, 152);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.btn_read {
+  &,
+  &:link,
+  &:visited {
+    border: none;
+    background: none;
+    color: #1098ad;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+.empty {
+  &_tour {
+    margin: 5rem auto;
+    text-align: center;
+    font-size: 3rem;
+    color: #1098ad;
+  }
+}
